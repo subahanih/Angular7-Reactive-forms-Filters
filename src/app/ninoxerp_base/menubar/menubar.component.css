@@ -1,0 +1,96 @@
+.menubar-module-background {
+    background-color:#222222;
+    position: fixed;
+    width: 70px;
+    height: calc(100% - 111px);
+    left: 0;
+    top: 88px;
+    overflow: auto;
+}
+
+.menubar-menu-background {
+    background-color:#333333;
+    position: fixed;
+    width: 200px;
+    height: calc(100% - 111px);
+    left: 70px;
+    top: 88px;
+    overflow: auto;
+}
+
+.menubar-module {
+    background-color: #222222;
+    width: 70px;
+    height: 68px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menubar-module:hover {
+    background-color: #333333;
+}
+
+.menubar-module-name {
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    font-size: 11px;
+    color: rgb(235, 235, 235);
+    cursor: pointer;
+    line-height: 8px;
+}
+
+.menubar-module-icon {
+    width: 43px;
+    height: 36px;
+    margin-top: 9px;
+    vertical-align: top;
+}
+
+.menubar-menu-icon {
+    font-size: 15px;
+    text-align: center;
+    line-height: 24px;
+    padding-left: 5px;
+}
+
+.tree-invisible {
+    display: none;
+}
+
+.module-tree li {
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+
+.module-tree ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+::ng-deep .mat-icon-rtl-mirror {
+    text-align: right;
+    left: 100%;
+    padding-left: 7em;
+    position: absolute;
+}
+
+::ng-deep .mat-tree {
+    background: #fff0;
+}
+
+::ng-deep .mat-nested-tree-node, .mat-tree-node {
+    color: rgba(235, 235, 235, 1.0);
+}
+
+::ng-deep .mat-nested-tree-node, .mat-tree-node {
+    font-weight: 400;
+    font-size: 12px;
+    min-height: 40px;
+}
+
+.mat-icon-button {
+    font-size: 12px;
+    line-height: 25px !important;
+}

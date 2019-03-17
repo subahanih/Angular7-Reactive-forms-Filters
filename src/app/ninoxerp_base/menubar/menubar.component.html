@@ -1,0 +1,40 @@
+<div [formGroup]="formGroupModule">
+    <div formArrayName="formArrayModules" class="menubar-module-background">
+        <div [formGroupName]="i" class="menubar-module"
+            *ngFor="let module of formGroupModule.get('formArrayModules').controls; let i=index;"
+            (click)="selectModule(i)" style.background-color={{moduleList[i].styleModule}}>  
+            <img class="menubar-module-icon" src={{moduleList[i].moduleIcon}} />
+            <label class="menubar-module-name">{{moduleList[i].moduleName}}</label>
+        </div>
+    </div>
+</div>
+<div id="divMenuBar" class="menubar-menu-background">
+    <mat-tree [dataSource]="nestedDataSource" [treeControl]="nestedTreeControl" class="module-tree">
+        <mat-tree-node *matTreeNodeDef="let node" matTreeNodeToggle>
+          <li class="mat-tree-node">
+            <mat-icon class="menubar-menu-icon">settings</mat-icon>
+            <button mat-icon-button disableRipple>
+              {{node.screenName}}
+            </button>
+          </li>
+        </mat-tree-node>
+      
+        <mat-nested-tree-node *matTreeNodeDef="let node; when: hasNestedChild">
+          <li>
+            <div class="mat-tree-node">
+              <mat-icon class="menubar-menu-icon">directions_bike</mat-icon>
+              <button mat-icon-button matTreeNodeToggle
+                  [attr.aria-label]="'toggle ' + node.screenName" disableRipple>
+                  {{node.screenName}}
+                <mat-icon class="mat-icon-rtl-mirror">
+                  {{nestedTreeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
+                </mat-icon>
+              </button>
+            </div>
+            <ul [class.tree-invisible]="!nestedTreeControl.isExpanded(node)">
+              <ng-container matTreeNodeOutlet></ng-container>
+            </ul>
+          </li>
+        </mat-nested-tree-node>
+      </mat-tree>
+</div>

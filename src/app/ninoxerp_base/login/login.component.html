@@ -1,0 +1,29 @@
+<div class="login-bg-image">
+    <div class="login-top-panel">
+            <span class="helper"></span> 
+            <img class="ninox-logo" src="../../../assets/images/ninox-logo.png">
+    </div>
+    <div class="login-middle-panel">
+        <div class="login-panel"> 
+            <h2 class="login-headding">Login</h2>
+            <h3 class="login-forget-password">Welcome back! to access NinoxERP <br> Did you forget your password?</h3>
+            <div>
+                <h3 class="login-error">{{errorMessage}} <mat-icon class="login-error-icon" matSuffix>warning</mat-icon></h3>
+            </div>
+            <mat-form-field class="login-username">
+                <input matInput placeholder="Username" [formControl]="username">
+                <mat-icon matSuffix>person</mat-icon> 
+                <mat-error *ngIf="username.invalid">{{getErrorMsgUsername()}}</mat-error>
+            </mat-form-field>
+            <mat-form-field class="login-password abc">
+                <input class="abc" matInput placeholder="Password" [type]="hide ? 'password' : 'text'" [formControl]="password">
+                <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon> 
+                <mat-error *ngIf="password.invalid">{{getErrorMsgPassword()}}</mat-error>
+            </mat-form-field>
+            <div class="login-continue-div">
+                <button class="login-continue" mat-button (click)="login()">Continue </button>
+            </div>
+        </div>   
+    </div>
+    <div class="login-bottom-panel"></div>
+</div>

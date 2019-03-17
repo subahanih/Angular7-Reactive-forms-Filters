@@ -1,0 +1,28 @@
+<div class="topbar-background">
+  <div id="divTopbarErpLogo" class="topbar-erplogo-background">
+    <span class="helper"></span> 
+    <img id="imgErplogo" class="ninoxerp-logo" src='../../../assets/images/ninoxerp-logo.png'>
+  </div>
+  <div id="divTopbarCompanyBkgd" class="topbar-company-background">
+      <span class="helper"></span>
+      <label id="lblCompanyName" class="company-name">{{companyName}}</label>
+  </div>
+  <div class="topbar-user-background">
+    <span class="helper"></span>
+    <label class="display-user-name">Welcome! {{userName}}</label>
+    <img class="user-photo" src="../../../assets/images/male.jpg">
+    <button class="alert-button" mat-icon-button disableRipple>
+        <mat-icon class="alert-icon">notifications</mat-icon>
+    </button>
+    <button class="settings-button" mat-icon-button disableRipple>
+      <mat-icon class="settings-icon">settings</mat-icon>
+    </button> 
+    <button class="logout-button" mat-icon-button disableRipple>
+      <mat-icon class="logout-icon" (click)="logout()">power_settings_new</mat-icon>
+    </button>
+  </div>
+</div>
+<div class="topbar-runner">
+</div>
+<div class="topbar-breadscrum">
+</div>

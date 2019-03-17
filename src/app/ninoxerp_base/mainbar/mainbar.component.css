@@ -1,0 +1,17 @@
+.mainbar-background {
+    background-color: aqua;
+    position: fixed;
+    width: calc(100% - 270px);
+    height: calc(100% - 111px);
+    top: 88px;
+    right: 0;
+}
+  
+.divinner {
+    background-color: rgb(255, 255, 255);
+    height: calc(100% - 16px);
+    padding: 8px 0px 8px 0px;
+}
+  
+  
+  

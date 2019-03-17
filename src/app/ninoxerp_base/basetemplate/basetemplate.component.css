@@ -1,0 +1,367 @@
+.content {
+    height: calc(100%);
+    background-color: rgb(255, 255, 255);
+    /* border: 1px solid rgb(0, 0, 0); */
+}
+
+.search-layout {
+    height: calc(100% - 2px);
+    margin-left: 8px;
+    margin-right: 8px;
+    background-color: rgb(255, 255, 255);
+    /* border: 1px solid rgb(230, 230, 230); */
+}
+
+.input-layout {
+    height: 30%;
+    border-radius: 4px;
+    margin-left: 8px;
+    margin-right: 8px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(230, 230, 230);
+    box-shadow: 0px 1px 3px rgb(180, 180, 180);
+}
+
+.button-layout {
+    height: 35px;
+    margin-top: 8px;
+    border-radius: 4px;
+    margin-left: 8px;
+    margin-right: 8px;
+    vertical-align: middle;
+    background-color: rgb(250, 250, 250);
+    border: 1px solid rgb(220, 220, 220);
+    box-shadow: 0px 1px 3px rgb(180, 180, 180);
+}
+
+.table-layout {
+    overflow: auto;
+    height: calc(70% - 57px);
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(230, 230, 230);
+}
+
+.table-search-layout {
+    overflow: auto;
+    margin-top: 0px;
+    height: calc(100% - 35px);
+}
+
+.btn-add, .btn-edit {
+    font-size: 12px;
+    width: 45px;
+    height: 35px;
+    font-weight: 600;
+    line-height: 34px;
+    margin-left: 10px;
+}
+
+.btn-refresh {
+    font-size: 12px;
+    width: 65px;
+    height: 35px;
+    font-weight: 600;
+    line-height: 34px;
+    margin-left: 10px;
+}
+
+.btn-add-icon {
+    font-size: 18px;
+    width: 18px;
+    height: 35px;
+    line-height: 33px;
+}
+
+.btn-edit-icon {
+    font-size: 15px;
+    width: 18px;
+    height: 35px;
+    line-height: 33px;
+}
+
+.btn-refresh-icon {
+    font-size: 17px;
+    width: 18px;
+    height: 35px;
+    font-weight: 800px;
+    line-height: 33px;
+}
+
+/* .btn-download {
+    width: 22px;
+    height: 35px;
+    line-height: 35px;
+    margin-right: 10px;
+    float: right;
+} */
+
+.btn-print {
+    font-size: 12px;
+    width: 50px;
+    font-weight: 600;
+    margin-right: 10px;
+    float: right;
+}
+
+.btn-print-icon {
+    font-size: 18px;
+}
+
+.btn-download {
+    font-size: 12px;
+    width: 80px;
+    font-weight: 600;
+    margin-right: 20px;
+    float: right;
+}
+
+.btn-download-icon {
+    font-size: 19px;
+}
+
+/* .btn-download-icon {
+    width: 20px;
+    height: 20px;
+    background: url('../../../assets/icons/pdf.png') no-repeat scroll 0px 0px/20px auto;
+}
+
+.btn-download-icon:hover {
+    width: 20px;
+    height: 20px;
+    background: url('../../../assets/icons/pdf-active.png') no-repeat scroll 0px 0px/20px auto;
+} */
+
+.tbl-filter-input {
+    font-size: 12px;
+    width: 100%;
+    height: 22px;
+    line-height: 22px;
+    text-indent: 3px;
+    outline: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 1px solid #d6d6d6;
+    background: rgb(253, 253, 253);
+}
+
+.table-header {
+    height: 35px;
+    vertical-align: middle;
+    background-image: linear-gradient(to bottom, rgb(0, 162, 255), rgb(10, 44, 68, 70%));
+    border: 1px solid rgb(220, 220, 220);
+}
+
+.table-footer {
+    height: 35px;
+    vertical-align: middle;
+    /* background-image: linear-gradient(to bottom, rgb(230, 230, 230), rgb(250, 250, 250)); */
+    background-image: linear-gradient(to bottom right, rgb(0, 162, 255), rgb(10, 44, 68));
+    border: 1px solid rgb(220, 220, 220);
+}
+
+/* .mat-row:nth-child(even){
+    background-color: rgb(253, 253, 253);
+}
+
+.mat-row:nth-child(odd){
+    background-color: rgb(240, 240, 240);
+} */
+
+table {
+    width: 100%;
+    /* height:100%; */
+    border-left: 1px solid rgb(220, 220, 220);
+    border-right: 1px solid rgb(220, 220, 220);
+    /* border-bottom: 1px solid rgb(220, 220, 220); */
+}
+
+table.mat-table {
+    border-spacing: 0;
+    /* height: 100%; */
+}
+
+tr.mat-header-row {
+    height: 50px;
+    line-height: 1.5;
+    background-image: linear-gradient(to top, rgb(240, 240, 240), rgb(240, 240, 240));
+}
+
+.mat-header-cell {
+    color: rgba(0,0,0,0.6);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+tr.mat-footer-row {
+    height: 30px;
+    background-image: linear-gradient(to top, rgb(240, 240, 240), rgb(240, 240, 240));
+}
+
+tr.mat-row {
+    height: 25px;
+}
+
+.mat-cell, .mat-footer-cell {
+    font-size: 12px;
+}
+
+.mat-row:hover, .selected-row {
+  background: #f5f5f5;
+}
+
+.mat-row:active, .mat-row.selected-row {
+  background: #eaeaea;
+}
+
+.mat-paginator {
+    height: 35px;
+    border-left: 1px solid rgb(220, 220, 220);
+    border-right: 1px solid rgb(220, 220, 220);
+    border-bottom: 1px solid rgb(220, 220, 220);
+    background-image: linear-gradient(to bottom, rgb(250, 250, 250), rgb(200, 200, 200));
+}
+
+td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:first-of-type {
+    padding-left: 15px;
+}
+
+td.mat-cell:last-of-type, td.mat-footer-cell:last-of-type, th.mat-header-cell:last-of-type {
+    padding-right: 15px;
+}
+
+td.mat-cell, td.mat-footer-cell, th.mat-header-cell {
+    padding: 0;
+    /* border: none; */
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding-left: 5px;
+}
+
+mat-divider.mat-divider-vertical {
+    border-top: 0;
+    display: inline;
+    margin-left: 10px;
+    border-right-width: 1px;
+    border-right-style: solid;
+    vertical-align: middle;
+}
+
+::ng-deep .mat-paginator-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 35px !important;
+    padding: 0 8px;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+}
+
+::ng-deep .mat-paginator-outer-container {
+    display: flex;
+    height: 35px;
+}
+
+::ng-deep .mat-paginator-page-size {
+    display: flex;
+    align-items: center !important;
+    margin-right: 8px;
+    height: 35px;
+}
+
+::ng-deep .mat-form-field-appearance-legacy .mat-form-field-infix {
+    padding: 0.1400em 0;
+}
+
+::ng-deep .mat-form-field {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    height: 35px;
+}
+
+::ng-deep .mat-paginator-page-size-select {
+    margin: 0px 4px 0 4px !important;
+    width: 56px;
+}
+
+::ng-deep .mat-form-field-appearance-legacy .mat-form-field-wrapper {
+    padding-bottom: 0em !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+::ng-deep .mat-form-field-appearance-legacy .mat-form-field-underline {
+    height: 0px !important;
+} 
+
+::ng-deep .mat-form-field-appearance-legacy .mat-form-field-ripple {
+    top: 0;
+    height: 0px !important;
+    overflow: hidden;
+}
+
+::ng-deep .mat-paginator-range-actions {
+    display: flex;
+    align-items: center !important;
+    height: 35px !important;
+}
+
+::ng-deep .mat-icon-button {
+    padding: 0;
+    min-width: 0;
+    width: 40px;
+    height: 35px !important;
+    flex-shrink: 0;
+    line-height: 35px !important;
+    border-radius: 50%;
+}
+
+::ng-deep .mat-checkbox-inner-container {
+    display: inline-block;
+    width: 15px !important;
+    height: 15px !important;
+    line-height: 0;
+    margin: auto;
+    margin-right: 8px;
+    order: 0;
+    position: relative;
+    vertical-align: middle;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+::ng-deep .mat-checkbox-background, .mat-checkbox-frame {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    border-radius: 0 !important;
+    box-sizing: border-box;
+    pointer-events: none;
+} 
+
+::ng-deep .mat-checkbox-frame {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    border-radius: 0 !important;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background, .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+    background-color: rgb(0, 162, 255) !important;
+}
+
+::ng-deep .mat-checkbox:not(.mat-checkbox-disabled).mat-accent .mat-checkbox-ripple .mat-ripple-element {
+    background-color: rgb(0, 162, 255) !important;
+}
+
+::ng-deep .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+    background-color: rgb(0, 162, 255) !important;
+}
