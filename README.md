@@ -1,5 +1,13 @@
 # Angular7-Reactive-forms-Filters
-Angular7 - Reactive forms and custom filters in column level
+Angular7 - Reactive forms and custom filters in column level.
+
+This Ninox ERP application I have created as two different project 
+  * Front end is developed using Angular 7.0.1
+  * Back end is developed using Spring Boot Rest API, MySql with OAuth2 Security.
+
+Note:- I haven't posted my integarated(Fron & Back end) source.
+  For a learning purpose I have posted this source in github.
+  Back end source is given in my github - https://github.com/subahanih/Spring-Boot-OAuth2-Configuration-MySql
 
 ### Login Screen
 ![](screenshots/ninox-erp-login.png)
